@@ -1,0 +1,25 @@
+html .none {
+    display: none;
+}
+
+body {
+    margin: 0;
+}
+
+p,
+span {
+    transition: 0.5s;
+}
+
+.alert,
+.alertaTexto {
+    font-size: 1.8rem;
+    color: red;
+}
+
+div .alert-icon {
+    background-color: red;
+    font-size: 1.6rem;
+    width: 18px;
+    height: 18px;
+}

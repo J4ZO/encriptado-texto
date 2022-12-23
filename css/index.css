@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+button,
+textarea {
+    font-family: 'Courgette', cursive;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    background-image: url('../img/gradiente.jpg');
+
+}
+
+.container {
+    height: 100%;
+    padding: 2rem 1.6rem;
+    margin: 0px;
+    font-family: 'Courgette', cursive;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    position: relative;
+}
+
+main {
+    margin-top: 8rem;
+
+}
+
+.section-texto {
+    min-width: 300px;
+    height: 300px;
+}
+
+.texto-encriptar::placeholder {
+    color: white;
+}
+
+.texto-encriptar {
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 3.2rem;
+    resize: none;
+    background: none;
+    color: white;
+}
+
+.texto-encriptar:focus-visible {
+    outline: none;
+}
+
+.botones-section {
+    margin-top: 2rem;
+}
+
+.advertencia-container {
+    display: flex;
+    align-items: center
+}
+
+.advertencia-icon {
+    background-color: #495057;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    transition: 0.5s;
+}
+
+.advertencia {
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.botones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-top: 1rem;
+}
+
+.boton {
+    width: 343px;
+    height: 68px;
+    border-radius: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.botones-container .boton:disabled {
+    font-size: 1.6rem;
+    box-shadow: 0px 5px 10px #000;
+    cursor: default;
+}
+
+.boton:hover {
+    font-size: 1.8rem;
+    box-shadow: 0px 5px 20px #000;
+}
+
+.encriptar {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #1B3A4B;
+}
+
+.desencriptar {
+    border: 2px solid #4D194D;
+    color: #4D194D;
+
+}
+
+.encriptar:hover {
+    color: #fff;
+    background-color: #132A36;
+}
+
+.desencriptar:hover {
+    color: #792779;
+}
+
+.botones-container .encriptar:disabled {
+    color: lightgray;
+    /* background-color: #234B60; */
+    opacity: 80%;
+}
+
+.botones-container .desencriptar:disabled {
+    opacity: 80%;
+}
+
+.resultado-container {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-top: 6.4rem;
+    border-radius: 32px;
+    padding: 3.2rem;
+    box-shadow: 15px 15px 30px #000, -15px -15px 30px #312244;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+        transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.resultado-container:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.02);
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.notexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+}
+
+
+.notexto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.notexto-info h1 {
+    line-height: 120%;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.notexto-info p {
+    /* line-height: 120%; */
+    font-size: 1.6rem;
+    margin: 0;
+    color: rgb(255 255 255 / 34%);
+}
+
+
+.muneco {
+    display: none;
+}
+
+.mostrartexto-container {
+    word-break: break-all;
+}
+
+.mostrarTexto {
+    font-size: 2.2rem;
+    line-height: 150%;
+    align-self: stretch;
+    margin: 0;
+    color: white;
+}
+
+.copiar {
+    margin-top: 2rem;
+    border-radius: 2.4rem;
+    padding: 2.4rem;
+    border: 1px solid #0A3871;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.copiado {
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    border-radius: 2.4rem;
+    width: 300px;
+    padding: 1rem;
+    color: #792779;
+    text-align: center;
+    box-shadow: 10px 10px 30px #312244, -10px -10px 30px #000;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.impulso {
+    opacity: 100%;
+    top: 78%;
+}
+
+.copiado p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

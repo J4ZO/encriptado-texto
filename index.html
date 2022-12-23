@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/interactivo.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet"> -->
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <img src="img/Vectorlogo.png" alt="logo-alura">
+        </header>
+
+        <main class="container-encriptado">
+            <section class="section-texto">
+                <textarea name="encriptado" id="encriptado" class="texto-encriptar" placeholder="Ingrese el texto aquí"
+                    maxlength="200"></textarea>
+            </section>
+            <section class="botones-section">
+                <div class="advertencia-container">
+                    <div class="advertencia-icon">
+                        <span>!</span>
+                    </div>
+
+                    <p class="advertencia">Solo letras minúsculas y sin acentos.<span class="alertLetras"> Máximo 200
+                            letras</span></p>
+                </div>
+                <footer class="botones-container">
+                    <button id="encriptar" class="boton encriptar">Encriptar</button>
+                    <button id="desencriptar" class="boton desencriptar">Desencriptar</button>
+                </footer>
+            </section>
+        </main>
+        <section class="resultado-container">
+            <section class="texto-container">
+                <div class="notexto">
+                    <img src="img/muneco.png" alt="No hay texto" class="muneco">
+                    <div class="notexto-info">
+                        <h1>Ningún mensaje fue encontrado</h1>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div class="mostrartexto-container">
+                    <p class="mostrarTexto none" id="resultado"></p>
+                </div>
+            </section>
+
+            <button id="copiar" class="none copiar">Copiar</button>
+
+        </section>
+        <div class="copiado">
+            <p>📑Copiado en el portapapeles</p>
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

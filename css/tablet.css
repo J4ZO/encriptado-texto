@@ -1,0 +1,16 @@
+.section-texto {
+    height: 400px;
+}
+
+main {
+    margin-top: 12rem;
+
+}
+
+.botones-container {
+    justify-content: space-between;
+}
+
+.boton {
+    width: 332px;
+}

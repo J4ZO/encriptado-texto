@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header aside"
+        ". main aside"
+        ". main aside";
+    height: 100vh;
+    position: none;
+}
+
+.resultado-container {
+    width: 400px;
+    justify-content: space-between;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    margin-top: 8rem;
+}
+
+.container-encriptado {
+    grid-area: main;
+    margin-left: 10rem;
+    /* margin-right: 8rem; */
+}
+
+.section-texto {
+    max-height: 500px;
+    max-width: 680px;
+    margin-right: 8rem;
+}
+
+.botones-section {
+    max-width: 680px;
+    margin-right: 8rem;
+}
+
+.resultado-container {
+    margin: 0;
+    grid-area: aside;
+    position: relative;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.boton {
+    width: 328px;
+}
+
+.muneco {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+/* .mostrarTexto {
+    display: inline;
+    align-self: flex-start;
+} */
+.notexto {
+    margin: auto 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
